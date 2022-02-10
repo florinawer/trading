@@ -1,0 +1,58 @@
+﻿@model TradingAppClient.Presentacion.Website.Pagination.PagedResponseViewModel<IEnumerable<TradingAppClient.Presentation.Website.Models.StockViewModel>>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Data.First().Ticket)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Data.First().Name)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Data) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ticket)
+                </td>
+                 <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.ActionLink("Add to portfolio", "Create", "PortfolioStock",
+                        new{
+                            name = item.Name,
+                            ticket = item.Ticket
+                        })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table> 
+<div class="containerPaged">
+    <div>
+        <a href=""> First </a>
+        <a href=""> < </a>
+
+        <span>@Model.PageNumber</span>
+
+        <a href=""> > </a>
+        <a href=""> Last </a>
+    </div>
+    <div class="enumeration">        
+        <span>@Model.PageNumber de @Model.TotalPages </span>
+    </div>
+</div>
+
+
+
+<style>
+
+
+</style>
