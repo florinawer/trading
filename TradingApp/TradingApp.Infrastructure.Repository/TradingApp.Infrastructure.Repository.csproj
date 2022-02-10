@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.13" />
+    <PackageReference Include="NPOI" Version="2.5.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TradingApp.Infrastructure.Data.Model\TradingApp.Infrastructure.Data.Model.csproj" />
+    <ProjectReference Include="..\TradingApp.Infrastructure.Persistence\TradingApp.Infrastructure.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>
