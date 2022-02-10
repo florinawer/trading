@@ -1,6 +1,10 @@
 # Trading.Web.Api
 
 Aplicación que se encarga de mantener actualizados y disponibles los datos de las acciones. 
+Diagrama de componentes de la Trading.Web.Api
+
+<img style="padding: 10px" src="./Docs/component Diagram.jpg" alt="drawing" width="600px"/>
+
 # Instrucciones para iniciar Trading.Web.Api
 
 A continuacion se presenta las instrucciones necesarias para poner en funcionamiento Trading.Web.Api.
