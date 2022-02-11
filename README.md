@@ -89,7 +89,7 @@ Server=(Nombre del servidor);Database=(Nombre de la base de datos creada);uid=(U
 
 - Crear el fichero *docker-compose.yml* donde se  configuran los contenedores a crear y sus dependencias
 
-- Indicar en la nueva conexión a MySql, en el archivo *docker-compose.yml* y en el fichero *appsettings.json* los mismos valores y parametros.
+- Indicar en la nueva conexión a MySql, en el archivo *docker-compose.yml* y en el fichero *appsettings.json* los mismos valores y parámetros.
 
 # Ejecución
 

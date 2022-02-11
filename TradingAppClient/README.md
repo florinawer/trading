@@ -7,7 +7,7 @@ Diagrama de componentes de la aplicación Trading.App.Cliente
  
 # Instrucciones para iniciar Trading.App.Cliente
 
-A continuacion se presenta las instrucciones necesarias para poner en funcionamiento Trading.App.Cliente.
+A continuacion se presentan las instrucciones necesarias para poner en funcionamiento Trading.App.Cliente.
 
 # Pre-requisitos
 
@@ -20,7 +20,7 @@ A continuacion se presenta las instrucciones necesarias para poner en funcionami
 1) Descargar el proyecto y abrir en Visual Studio 2022
 
 2) Realizar un compilado. Presionar con el click derecho sobre el solution del proyecto dentro del Visual Studio y ejecutar la opcion **Build Solution**.
-   Esto se hace para verificar que el código compila correctamente y que las dependencias se instale correctamente.
+   Esto se hace para verificar que el código compila correctamente y que las dependencias se instalen correctamente.
 
 # Descripción del funcionamiento
 La aplicación se conecta a la Api de Trading.Web.Api modificando en el archivo **appsetings.json** la dirección de acceso a la Api.

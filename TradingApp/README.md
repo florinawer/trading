@@ -1,13 +1,14 @@
 # Trading.Web.Api
 
 Aplicación que se encarga de mantener actualizados y disponibles los datos de las acciones. 
+
 Diagrama de componentes de la Trading.Web.Api
 
 <img style="padding: 10px" src="./Docs/component Diagram.jpg" alt="drawing" width="600px"/>
 
 # Instrucciones para iniciar Trading.Web.Api
 
-A continuacion se presenta las instrucciones necesarias para poner en funcionamiento Trading.Web.Api.
+A continuacion se presentan las instrucciones necesarias para poner en funcionamiento Trading.Web.Api.
 
 # Pre-requisitos
 
@@ -21,8 +22,8 @@ A continuacion se presenta las instrucciones necesarias para poner en funcionami
 
 1) Descargar el proyecto y abrir en Visual Studio 2022
 
-2) Realizar un compilado. Presionar con el click derecho sobre el solution del proyecto dentro del Visual Studio y ejecutar la opcion **Build Solution**.
-   Esto se hace para verificar que el codigo compila correctamente y que las dependencias se instale correctamente.
+2) Realizar un compilado. Presionar con el click derecho sobre la solution del proyecto dentro del Visual Studio y ejecutar la opcion **Build Solution**.
+   Esto se hace para verificar que el codigo compila correctamente y que las dependencias se instalen correctamente.
 
 3) Para un deploy en local con MySql se tiene que crear una conexión a MySql Workbench y modificar el archivo **appsetings.json** con la información de la nueva conexión.
 Si el servidor tiene usuario y password es necesario incluirlos en el campo de la siguiente manera:
@@ -45,7 +46,7 @@ Al arrancar la aplicación **Trading.Web.Api** se ejecutan una serie de acciones
      - Realiza un **bulk insert** de todos los datos de las acciones desde la Api pública.
    - Si la Base de Datos existe :
      - Comprueba que los datos de nuestra Base de Datos son idénticos que los de la Api pública.
- - Se levanta el servicio de Web Api que proporciona toda la información de las acciones actualizada y disponible en cada momento.  
+ - Se levanta el servicio de Web Api que proporciona toda la información de las acciones actualizadas y disponibles en cada momento.  
 
 # Deploy 📦
 ## Deploy en Heroku
