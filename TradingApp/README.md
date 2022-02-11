@@ -86,7 +86,7 @@ Deploy de la Web.Api en **Heroku**:
 
 ## Paginado de la Web Api
 - Creación de un End-Point para devolver las peticiones paginadas juntando toda la información necesaria para su posterior uso en el cliente.
-```
+``` C#
 {
   "pageNumber": 2,
   "pageSize": 3,
@@ -109,8 +109,8 @@ Deploy de la Web.Api en **Heroku**:
 }
 ```
 - Creación de reglas a través del Middleware **FluentValidator** para impedir que se lance una petición con información marcada como inválida o vacía.
-  
-```
+   
+``` C#
 namespace TradingApp.Web.Api.Extensions
 {
     public class PortfolioStockDtoValidator : AbstractValidator<PortfolioStockDTO>
@@ -124,7 +124,7 @@ namespace TradingApp.Web.Api.Extensions
 ```
 - Implementación de **Automapper** para el mapeo de objetos.
 
-```
+``` C#
 private static MapperConfiguration GetMapperConfiguration()
         {
             return new(mapperConfiguration =>
@@ -140,7 +140,7 @@ private static MapperConfiguration GetMapperConfiguration()
         }
 ```
 - Bulk Insert para la inserción de las acciones en nuestra base de datos
-```
+``` C#
 for (int i = 0; i < stocks.Count; i += insertSize)
     {
         var stocksToInsert = stocks.GetRange(i, Math.Min(insertSize, stocks.Count - i));
@@ -149,7 +149,7 @@ for (int i = 0; i < stocks.Count; i += insertSize)
     _unitOfWork.Commit();
 ```
 - Activar el CORS en ASP.NET Core para permitir peticiones procedentes de diferentes dominios
-```
+``` C#
 //CORS Enabled 
         services.AddCors(opt =>
         {
