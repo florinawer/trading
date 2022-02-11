@@ -4,13 +4,13 @@ El proyecto de Trading es un proyecto realizado durante el Bootcamp de .Net.
 
 El proyecto está formado por un conjunto de soluciones que tienen como finalidad la posibilidad de mantener actualizadas tanto las acciones que un usuario compra, como la base de datos de las mismas actualizandose a través de una Api pública que proporciona los datos.
 
-El proyecto empezó por una clase donde creabamos a mano una acción ficticia y la imprimiamos por consola, y según avanzaba el curso de formación se han ido incorporando arquitecturas, patrones de diseño, herramientas y muchas otras caracteristicas.
+El proyecto empezó por una clase donde creabamos a mano una acción ficticia y la imprimiamos por consola, y según avanzaba el curso de formación se han ido incorporando arquitecturas, patrones de diseño, herramientas y muchas otras características.
 
 # Aplicaciones
 El proyecto está formado por 2 aplicaciones para asegurar la trazabilidad e integridad de todos los datos tratados.
 
 - **Trading.Web.Api** La primera aplicación desarrollada se encarga de mantener actualizados y disponibles los datos de las acciones. 
--  **Trading.App.Client** La segunda aplicación se encanga de mostrar al usuario final la interfaz para interactuar con la Api y realizar acciones.
+-  **Trading.App.Client** La segunda aplicación se encarga de mostrar al usuario final la interfaz para interactuar con la Api y realizar acciones.
 
 # Diseño de las Aplicaciones  
 ## Architectura
@@ -19,37 +19,41 @@ La Arquitectura utilizada para el desarrollo de las aplicaciones es **Domain-Dri
 <img style="padding:10px" src="./Docs/architecture.png" alt="drawing" width="600"/>
 
 # Tech Stack
-### Tecnologías y design patterns utilizados en la **Trading.Web.Api**
+### Tecnologías utilizadas en la **Trading.Web.Api**
 - ASP.NET Core 5.0
 - ASP.NET Web Api
 - AutoMapper
-- FluentValidator
 - Swagger UI
 - MYSQL
+- Docker-Compose
+- HttpClient
+- Entity Framework
+- Linq
+- HealthCheck
   
-- Domain Driven Design
-- Domain Events
-- Prueba de integración
-- Domain Notification
-- Event Sourcing
+### Patrones de diseño y SOLID principles
 - Unit Of Work
 - Middleware
-- Repository & Generic Repository
-- Inversion of Control / Dependency injection
+- Dependency injection
+- Repository Pattern
+- Singleton
 
-### Tecnologías y design patterns utilizados en la **Trading.Web.Cliente**
+### Seguridad
+- CORS
+- XSS 
+- Remove Headers
+- Fluent Validations
+
+### Tecnologías utilizadas en la **Trading.Web.Cliente**
 
 - ASP.NET Core 5.0
 - ASP.NET Core MVC
+- Docker-Compose
 - ASP.NET MVC-Razor
 - AutoMapper
-
-- Domain Driven Design
-- MVC pattern
-- Routing
-- Model binding
-- Model Validation
-- View Components
+- Serilog
+- Linq
+- Paginado
 
 # Pre-requisitos globales
 

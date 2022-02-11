@@ -38,7 +38,7 @@ Server=(Nombre del servidor);Database=(Nombre de la base de datos creada)
 
 # Descripción del funcionamiento
 Al arrancar la aplicación **Trading.Web.Api** se ejecutan una serie de acciones:
--  Pruebas de Integración (**SIT**)
+-  Realizado el (**SIT**) de la base de datos
    - Si la Base de Datos **NO** existe :
      - Crea la conexión hacia MySql basándose en la configuración de **appsetings.json**
      - Realiza una migración **CodeFirst** para la creación de la Base de Datos y  las tablas
