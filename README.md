@@ -70,8 +70,8 @@ La Arquitectura utilizada para el desarrollo de las aplicaciones es **Domain-Dri
 En cada aplicación se indican los pasos a seguir para la correcta puesta en marcha del proyecto.
 Recomendable configurar primero la Web Api así disponer de los datos primero.
 
-1) Ver [Trading.Web.Api/README.md]()
-2) Ver [Trading.Web.Api.Client/README.md]()
+1) Ver [Trading.Web.Api/README.md](https://github.com/florinawer/trading/blob/master/TradingApp/README.md)
+2) Ver [Trading.Web.Api.Client/README.md](https://github.com/florinawer/trading/tree/master/TradingAppClient#readme)
 
 # Deploy con Docker-Compose 📦
 
