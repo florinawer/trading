@@ -11,6 +11,5 @@ namespace TradingApp.Domain.Entities
         public int BuyPrice { get; set; }
 
         public DateTime BuyDate { get; set; }
-
     }
 }

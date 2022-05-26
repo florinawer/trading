@@ -17,7 +17,6 @@ namespace TradingApp.Application.Services.Implementations
         private readonly IStockRepository _stockRepository;
         private readonly IMapper _mapper;
 
-
         public StockService(IUnitOfWork unitOfWork, IStockRepository stockRepository, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
@@ -43,7 +42,7 @@ namespace TradingApp.Application.Services.Implementations
                 .GetPaginatedSync(paginationFilter.PageNumber, paginationFilter.PageSize));
 
             return new()
-            {                
+            {
                 Data = data,
                 TotalPages = (int)Math.Ceiling(totalPages),
                 TotalRecords = totalResults,
@@ -72,7 +71,6 @@ namespace TradingApp.Application.Services.Implementations
             var response = _stockRepository.RemoveByIdAsync(id);
             _unitOfWork.Commit();
             return response;
-
         }
     }
 }
